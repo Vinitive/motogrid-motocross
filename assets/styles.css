@@ -221,3 +221,8 @@ body.community-home{--bg:#101410;--panel:#1a201a;--ink:#f1f5ed;--lime:#8be000;--
 .game-community-page .footer{background:#090c09;border-top:1px solid #293329}.game-community-page .footer-brand{color:#f2f6ee}
 @media(max-width:850px){.rewards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.points-card{grid-column:1/-1;min-height:220px}.game-hub-heading{align-items:flex-start;flex-direction:column}.game-page-hero{background-position:60% center}}
 @media(max-width:560px){.game-page-hero{min-height:590px}.game-page-hero-inner{width:auto;margin:0 22px;padding:40px 0 55px}.game-page-hero h1{font-size:clamp(43px,12vw,66px)}.game-logo-wrap{height:52px;max-width:230px}.game-logo-img{max-height:52px}.game-stat-strip{gap:10px}.game-hub-section,.game-rewards-section{padding:62px 17px}.game-hub-grid,.rewards-grid{grid-template-columns:1fr}.chat-card,.points-card{grid-column:auto}.hub-card{padding:17px}.event-empty{align-items:flex-start}.points-total{margin-top:24px}.game-join-cta{padding:62px 18px}}
+
+.community-home .game-logo-on-card{height:56px;display:flex;align-items:center;justify-content:flex-start;margin:0 20px 9px;max-width:235px}
+.community-home .game-logo-on-card img{max-width:100%;max-height:54px;object-fit:contain;object-position:left center;filter:drop-shadow(0 3px 8px rgba(0,0,0,.35))}
+.community-home .game-logo-text{font:700 25px/.78 var(--display);letter-spacing:-1.5px;color:#f3f7ee;text-shadow:2px 2px 0 #4b8529}
+@media(max-width:560px){.community-home .game-logo-on-card{height:50px}.community-home .game-logo-on-card img{max-height:48px}}
