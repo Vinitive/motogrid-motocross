@@ -146,3 +146,78 @@ body.community-home{--bg:#101410;--panel:#1a201a;--ink:#f1f5ed;--lime:#8be000;--
 .community-home .footer-brand{color:#f2f6ee}
 @media(max-width:850px){.community-home .game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.community-home .game-card,.community-home .game-card:nth-child(4){grid-column:auto}.community-home .game-card:last-child{grid-column:1/-1}.community-home .community-feature{grid-template-columns:1fr}.community-home .community-feature-image{min-height:270px}.community-home .community-feature-content{padding:55px 25px}.community-home .section-heading{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.community-home .community-hero{min-height:690px;background-position:58% center}.community-home .community-hero-content{width:auto;margin:0 24px;padding:65px 0 85px}.community-home .community-hero h1{font-size:clamp(58px,15vw,88px)}.community-home .community-hero-meta{gap:13px;flex-direction:column;margin-top:38px}.community-home .games-section{padding:65px 18px}.community-home .game-grid{grid-template-columns:1fr}.community-home .game-card,.community-home .game-card:last-child{grid-column:auto;min-height:290px}.community-home .community-intro{padding-top:68px;padding-bottom:68px}}
+
+/* Individual game community hubs */
+.game-community-page{--hub-bg:#101410;--hub-panel:#191f19;--hub-border:#303a2f;background:var(--hub-bg);color:#f1f5ed}
+.game-community-page .site-header{background:rgba(13,17,13,.95);border-bottom-color:#293329}
+.game-community-page .nav a{color:#b9c2b5}.game-community-page .nav a:hover,.game-community-page .nav a.active{color:#a0e83f}
+.game-community-page .nav .nav-cta{background:#8be000;color:#11170f}.game-community-page .brand{background:#080b08;border-color:rgba(139,224,0,.35)}
+.game-page-hero{min-height:530px;position:relative;display:flex;align-items:center;overflow:hidden;background:#151c15 var(--game-cover) center/cover no-repeat}
+.game-page-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,11,7,.97) 0%,rgba(7,11,7,.78) 48%,rgba(7,11,7,.22) 100%),linear-gradient(0deg,rgba(7,11,7,.8),transparent 48%)}
+.game-page-hero-inner{position:relative;z-index:1;width:min(900px,86%);margin-left:clamp(24px,9vw,140px);padding:58px 0 72px}
+.back-grid{display:inline-block;margin-bottom:28px;font-size:9px;font-weight:700;letter-spacing:1.5px;color:#c8d5c1}
+.game-logo-wrap{height:70px;max-width:310px;margin-bottom:20px;display:flex;align-items:center}
+.game-logo-img{max-width:100%;max-height:70px;object-fit:contain;object-position:left center;filter:drop-shadow(0 4px 14px rgba(0,0,0,.35))}
+.game-logo-fallback{font:700 clamp(28px,4vw,42px)/.9 var(--display);letter-spacing:-2px;color:#f1f5ed;text-shadow:2px 2px #497e2d}
+.game-page-hero .eyebrow{margin-bottom:12px}
+.game-page-hero h1{font:700 clamp(48px,7vw,86px)/.88 var(--display);letter-spacing:-.07em;margin:0 0 18px;color:#f3f7ee}
+.game-page-lead{max-width:510px;color:#c0cbb9;font-size:13px;line-height:1.85}
+.game-hero-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:24px}
+.game-hero-link{font-size:9px;font-weight:700;letter-spacing:1px;color:#f0f6eb}
+.game-stat-strip{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:17px clamp(24px,8vw,125px);background:#8be000;color:#131a11;font-size:9px;font-weight:700;letter-spacing:1.2px}
+.game-stat-strip b{font:700 16px var(--display);margin-right:6px}.status-pill{border:1px solid rgba(19,26,17,.35);padding:6px 9px}
+.game-hub-section,.game-rewards-section{padding:82px clamp(22px,8vw,125px);background:#101410}
+.game-hub-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:34px}
+.game-hub-heading .eyebrow{margin-bottom:12px}
+.game-hub-heading h2,.game-join-cta h2{font:700 clamp(38px,5vw,64px)/.95 var(--display);letter-spacing:-.065em;margin:0;color:#f1f5ed}
+.game-hub-heading h2 em,.game-join-cta h2 em{font-style:normal;color:#91df36}
+.game-hub-heading>p{max-width:330px;color:#aab5a6;font-size:12px}
+.game-hub-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.hub-card{border:1px solid #303a2f;background:#191f19;border-radius:5px;padding:22px;min-width:0}
+.hub-card-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:17px;border-bottom:1px solid #303a2f}
+.hub-card-heading>div{display:flex;align-items:center;gap:12px}
+.hub-number{font:700 10px var(--display);color:#92df3c}
+.hub-card h3{font:700 14px var(--display);letter-spacing:.1px;margin:0;color:#f0f5ed}
+.hub-icon{font-size:24px;color:#9ce743}
+.empty-state{padding:28px 4px 20px;display:flex;flex-direction:column;align-items:flex-start}
+.empty-symbol{font-size:25px;color:#93e33a;margin-bottom:12px}
+.empty-state>b,.event-empty b{font:700 16px var(--display);color:#eaf2e5}
+.empty-state p,.event-empty p{font-size:11px;line-height:1.8;color:#a6b1a1;max-width:380px}
+.hub-text-link{display:inline-block;margin-top:10px;color:#9be642;font-size:9px;font-weight:700;letter-spacing:1px}
+.event-empty{display:flex;align-items:center;gap:18px;padding:27px 0 18px}
+.event-date{display:grid;place-items:center;flex-shrink:0;width:68px;height:68px;background:#242f22;border:1px solid #3c4a36;color:#9be642;font:700 11px/1.4 var(--display);text-align:center}
+.event-empty p{margin-bottom:0}
+.chat-card{grid-column:1/-1}
+.chat-online{font-size:8px;color:#9be642;letter-spacing:1px;white-space:nowrap}.chat-online i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#8be000;margin-right:6px}
+.chat-messages{height:190px;overflow:auto;padding:16px 0;display:flex;flex-direction:column;gap:10px}
+.chat-system{font-size:10px;line-height:1.8;color:#aab5a6;padding:12px;background:#202820;border-left:2px solid #8be000}
+.chat-user-message{align-self:flex-start;max-width:90%;font-size:11px;color:#e8f0e3;background:#263226;border:1px solid #344331;border-radius:4px;padding:9px 12px;overflow-wrap:anywhere}
+.chat-form{display:flex;gap:8px}
+.chat-form input{flex:1;min-width:0;background:#101510;border:1px solid #394437;color:#f1f5ed;border-radius:3px;padding:12px;font:12px var(--body);outline:none}
+.chat-form input:focus{border-color:#8be000}.chat-form button{width:44px;border:0;border-radius:3px;background:#8be000;color:#121811;font-size:22px;cursor:pointer}
+.chat-note{font-size:9px;color:#778473;margin:9px 0 0}
+.game-rewards-section{background:#171d17;border-block:1px solid #293329}
+.rewards-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.points-card,.reward-card{border:1px solid #354032;background:#101510;min-width:0}
+.points-card{padding:23px;display:flex;flex-direction:column;min-height:270px}
+.points-top{display:flex;justify-content:space-between;gap:8px;font-size:8px;font-weight:700;letter-spacing:1px;color:#b7c4b0}
+.points-token{color:#9be642}.points-total{font:700 clamp(45px,5vw,67px)/1 var(--display);letter-spacing:-3px;margin-top:34px;color:#f3f7ee}.points-total small{font-size:14px;letter-spacing:0;color:#9be642}
+.points-card>p{font-size:10px;color:#8d9a87;margin:8px 0 22px}
+.points-progress{height:5px;background:#283226;margin-top:auto}.points-progress span{display:block;width:0;height:100%;background:#8be000}
+.points-foot{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:13px;font-size:7px;letter-spacing:.6px;color:#83917d}
+.reward-card{display:flex;flex-direction:column}
+.reward-art{height:125px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#283b25,#111810);color:#9be642;border-bottom:1px solid #354032}
+.reward-dlc span{font:700 56px var(--display);letter-spacing:-4px;transform:skew(-8deg);text-shadow:3px 3px 0 #36572c}
+.reward-giveaway span{font:700 25px/.8 var(--display);letter-spacing:-1px;text-align:center;transform:rotate(-7deg);text-shadow:2px 2px 0 #36572c}
+.reward-info{padding:17px;display:flex;flex-direction:column;flex:1}
+.reward-type{font-size:8px;font-weight:700;letter-spacing:1.4px;color:#9be642}
+.reward-info h3{font:700 16px/1.1 var(--display);margin:9px 0;color:#f0f5ed}
+.reward-info p{font-size:10px;line-height:1.8;color:#a2aea0;margin:0 0 18px}
+.reward-button{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px;background:transparent;border:1px solid #4a5b43;color:#a6e94f;padding:10px;font-size:8px;font-weight:700;letter-spacing:.5px;cursor:pointer;text-align:left}
+.reward-button:hover{background:#243020;border-color:#8be000}
+.rewards-disclaimer{font-size:9px;color:#84917e;line-height:1.8;margin:18px 0 0}
+.game-join-cta{text-align:center;padding:78px 20px;background:#101410;border-top:1px solid #293329}
+.game-join-cta h2{margin-bottom:18px}.game-join-cta>p:not(.eyebrow){color:#aab5a6;font-size:12px;margin:0 auto 25px;max-width:430px}
+.game-community-page .footer{background:#090c09;border-top:1px solid #293329}.game-community-page .footer-brand{color:#f2f6ee}
+@media(max-width:850px){.rewards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.points-card{grid-column:1/-1;min-height:220px}.game-hub-heading{align-items:flex-start;flex-direction:column}.game-page-hero{background-position:60% center}}
+@media(max-width:560px){.game-page-hero{min-height:590px}.game-page-hero-inner{width:auto;margin:0 22px;padding:40px 0 55px}.game-page-hero h1{font-size:clamp(43px,12vw,66px)}.game-logo-wrap{height:52px;max-width:230px}.game-logo-img{max-height:52px}.game-stat-strip{gap:10px}.game-hub-section,.game-rewards-section{padding:62px 17px}.game-hub-grid,.rewards-grid{grid-template-columns:1fr}.chat-card,.points-card{grid-column:auto}.hub-card{padding:17px}.event-empty{align-items:flex-start}.points-total{margin-top:24px}.game-join-cta{padding:62px 18px}}
