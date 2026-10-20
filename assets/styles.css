@@ -263,3 +263,10 @@ body.community-home{--bg:#101410;--panel:#1a201a;--ink:#f1f5ed;--lime:#8be000;--
 .community-home .community-logo-feature:before,.community-home .community-logo-feature:after{display:none!important;}
 .community-home .community-logo-feature img{display:block;width:min(78%,620px);max-height:330px;object-fit:contain;}
 @media(max-width:700px){.community-home .community-logo-feature{min-height:280px;padding:32px}.community-home .community-logo-feature img{width:90%;max-height:230px}}
+
+/* Make the official MotoGrid mark unmistakable in the homepage feature panel. */
+.community-home .community-logo-feature{background:#101710!important;min-height:430px;overflow:hidden;}
+.community-home .community-logo-feature img{display:block!important;width:min(92%,760px)!important;height:auto!important;max-height:350px!important;object-fit:contain!important;visibility:visible!important;opacity:1!important;}
+.community-home .community-logo-feature .community-logo-fallback{display:none;color:#f5f7f2;font:700 clamp(48px,8vw,100px)/1 var(--display);letter-spacing:-.07em;text-align:center;}
+.community-home .community-logo-feature .community-logo-fallback span{font-size:.2em;color:var(--lime);vertical-align:top;}
+@media(max-width:700px){.community-home .community-logo-feature{min-height:280px}.community-home .community-logo-feature img{width:100%!important;max-height:220px!important}}
