@@ -226,3 +226,34 @@ body.community-home{--bg:#101410;--panel:#1a201a;--ink:#f1f5ed;--lime:#8be000;--
 .community-home .game-logo-on-card img{max-width:100%;max-height:54px;object-fit:contain;object-position:left center;filter:drop-shadow(0 3px 8px rgba(0,0,0,.35))}
 .community-home .game-logo-text{font:700 25px/.78 var(--display);letter-spacing:-1.5px;color:#f3f7ee;text-shadow:2px 2px 0 #4b8529}
 @media(max-width:560px){.community-home .game-logo-on-card{height:50px}.community-home .game-logo-on-card img{max-height:48px}}
+
+
+/* Logo-only game tiles and clean centered game hub headers */
+.community-home .game-card{background:#111710!important;border-color:#354233}
+.community-home .game-card:before{background-image:none!important;background:#111710!important;filter:none!important}
+.community-home .game-card:after{background:none!important}
+.community-home .game-card:hover:before{transform:none}
+.community-home .game-logo-on-card{height:145px;width:100%;max-width:none;margin:0;padding:22px 28px;display:flex;align-items:center;justify-content:center}
+.community-home .game-logo-on-card img{display:block;max-width:min(90%,330px);max-height:100px;width:auto;height:auto;object-fit:contain;object-position:center;filter:none}
+.community-home .game-logo-text{justify-content:center;text-align:center;font-size:clamp(27px,3vw,40px);line-height:.9;color:#f4f7f0;text-shadow:2px 2px 0 #4d842c}
+.community-home .game-card-content{padding-top:8px}
+.community-home .game-card h3{margin-top:0}
+.game-community-page .game-page-hero{background:#111710!important;background-image:none!important;min-height:440px}
+.game-community-page .game-page-shade{background:linear-gradient(135deg,#111710,#1b2619)!important}
+.game-community-page .game-page-hero-inner{width:min(900px,90%);margin:0 auto;text-align:center;padding:52px 0 64px;display:flex;flex-direction:column;align-items:center}
+.game-community-page .back-grid{align-self:flex-start}
+.game-community-page .game-logo-wrap{width:100%;max-width:520px;height:150px;margin:0 auto 24px;display:flex;align-items:center;justify-content:center}
+.game-community-page .game-logo-img{display:block;max-width:100%;max-height:135px;width:auto;height:auto;object-fit:contain;object-position:center;filter:none}
+.game-community-page .game-logo-fallback{text-align:center}
+.game-community-page .game-page-hero .eyebrow{text-align:center}
+.game-community-page .game-page-hero h1{display:none}
+.game-community-page .game-page-lead{margin:0 auto;text-align:center}
+.game-community-page .game-hero-actions{justify-content:center}
+@media(max-width:560px){
+ .community-home .game-logo-on-card{height:125px;padding:18px}
+ .community-home .game-logo-on-card img{max-height:86px}
+ .game-community-page .game-page-hero{min-height:390px}
+ .game-community-page .game-page-hero-inner{width:auto;margin:0 20px;padding:35px 0 45px}
+ .game-community-page .game-logo-wrap{height:115px;max-width:100%;margin-bottom:18px}
+ .game-community-page .game-logo-img{max-height:105px;max-width:95%}
+}
