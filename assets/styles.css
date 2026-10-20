@@ -84,3 +84,65 @@
 .store-product-art .product-stamp{border-color:rgba(255,255,255,.65);background:rgba(18,34,20,.38);backdrop-filter:blur(5px)}
 /* MotoGrid concept artwork is shown instead of generic stock photography. */
 @media(max-width:560px){.store-product-art{height:360px}}
+
+
+/* MotoGrid community redesign: dark motocross-game-inspired look with green accents */
+body.community-home{--bg:#101410;--panel:#1a201a;--ink:#f1f5ed;--lime:#8be000;--green:#1b2d1d;--muted:#a2aca0;--line:#303a2f;background:#101410;color:#f1f5ed}
+.community-home .site-header{background:rgba(13,17,13,.94);border-bottom:1px solid #293329}
+.community-home .nav a{color:#b9c2b5}.community-home .nav a:hover,.community-home .nav a.active{color:#a0e83f}
+.community-home .nav .nav-cta{background:#8be000;color:#11170f}.community-home .nav .nav-cta:hover{background:#a4ef37}
+.community-home .brand{background:#080b08;border-color:rgba(139,224,0,.35)}
+.community-home .community-hero{min-height:650px;position:relative;display:flex;align-items:center;overflow:hidden;background:#111710 url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=2200&q=85') center 47%/cover no-repeat}
+.community-home .community-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,8,.96) 0%,rgba(8,12,8,.82) 43%,rgba(8,12,8,.23) 100%),linear-gradient(0deg,rgba(8,12,8,.7),transparent 40%)}
+.community-home .community-hero-content{position:relative;z-index:1;width:min(850px,86%);margin-left:clamp(24px,10vw,155px);padding:90px 0 100px}
+.community-home .eyebrow{color:#9ae63b}
+.community-home .community-hero h1{font:700 clamp(60px,9vw,118px)/.88 var(--display);letter-spacing:-.075em;margin:0 0 26px;color:#f4f7f0}
+.community-home .community-hero h1 em{font-style:normal;color:#91df36}
+.community-home .community-lead{max-width:490px;color:#c2cbbd;font-size:15px;line-height:1.9}
+.community-home .community-hero .hero-actions{margin-top:30px}
+.community-home .community-ghost-link{font-size:11px;font-weight:700;color:#edf4e9}
+.community-home .community-hero-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:54px;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);max-width:610px;color:#b5c0b0;font-size:9px;font-weight:700;letter-spacing:1.5px}
+.community-home .community-hero-meta b{font:700 18px var(--display);color:#9be642;margin-right:7px}
+.community-home .hero-vertical{color:#d7e2d0}
+.community-home .ticker{background:#8be000;color:#131a11}
+.community-home .ticker div{font-weight:700}
+.community-home .community-intro{background:#101410}
+.community-home .community-intro h2,.community-home .section-heading h2,.community-home .community-feature h2,.community-home .join h2{color:#f1f5ed}
+.community-home .community-intro h2 em,.community-home .section-heading h2 em,.community-home .community-feature h2 em,.community-home .join h2 em{color:#91df36;font-style:normal}
+.community-home .community-intro .intro-copy{color:#aab5a6}
+.community-home .community-intro .arrow-link{color:#a0e83f}
+.community-home .games-section{padding:85px clamp(24px,8vw,125px) 90px;background:#171d17;border-top:1px solid #293329;border-bottom:1px solid #293329}
+.community-home .section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:34px}
+.community-home .section-heading .eyebrow{margin-bottom:15px}
+.community-home .section-heading h2{font:700 clamp(43px,5.5vw,72px)/.96 var(--display);letter-spacing:-.065em;margin:0}
+.community-home .section-heading>p{font-size:13px;color:#aab5a6;max-width:240px}
+.community-home .game-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:15px}
+.community-home .game-card{grid-column:span 2;min-height:315px;position:relative;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;border:1px solid #354233;border-radius:5px;background:#263327;isolation:isolate;transition:transform .22s,border-color .22s}
+.community-home .game-card:nth-child(4){grid-column:2/span 2}
+.community-home .game-card:before{content:"";position:absolute;inset:0;z-index:-2;background-position:center;background-size:cover;transition:transform .35s;filter:saturate(.75)}
+.community-home .game-card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,14,9,.45),rgba(9,14,9,.08) 38%,rgba(9,14,9,.94) 100%)}
+.community-home .game-card:hover{transform:translateY(-4px);border-color:#8be000}
+.community-home .game-card:hover:before{transform:scale(1.04)}
+.community-home .game-mxbikes:before{background-image:url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80')}
+.community-home .game-mxsim:before{background-image:url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80')}
+.community-home .game-mxgp:before{background-image:url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80')}
+.community-home .game-mtg:before{background-image:url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80')}
+.community-home .game-mxatv:before{background-image:url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80')}
+.community-home .game-card-top{display:flex;justify-content:space-between;align-items:center;padding:17px;color:#f0f5eb;font-size:9px;font-weight:700;letter-spacing:1.5px}
+.community-home .game-arrow{display:grid;place-items:center;width:31px;height:31px;border:1px solid rgba(255,255,255,.55);border-radius:50%;font-size:16px}
+.community-home .game-card-content{padding:22px 20px 20px}
+.community-home .game-card-content>p{font-size:8px;font-weight:700;letter-spacing:1.4px;color:#c5d5bc;margin:0 0 9px}
+.community-home .game-card h3{font:700 clamp(25px,3vw,36px)/.93 var(--display);letter-spacing:-1.6px;margin:0 0 22px;color:#fff}
+.community-home .game-card-cta{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.32);padding-top:12px;font-size:9px;font-weight:700;letter-spacing:1.3px;color:#a2e94b}
+.community-home .games-note{font-size:11px;color:#9aa695;margin:22px 0 0}
+.community-home .community-feature{display:grid;grid-template-columns:1fr 1fr;min-height:410px;background:#202a20}
+.community-home .community-feature-image{background:linear-gradient(0deg,rgba(8,15,8,.12),rgba(8,15,8,.12)),url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1400&q=85') center/cover no-repeat;min-height:380px}
+.community-home .community-feature-content{align-self:center;padding:65px clamp(25px,7vw,95px)}
+.community-home .community-feature h2{font:700 clamp(42px,5vw,65px)/.95 var(--display);letter-spacing:-.06em;margin:0 0 22px}
+.community-home .community-feature-content>p:not(.eyebrow){color:#b4c0af;font-size:13px;line-height:1.9;max-width:440px;margin-bottom:25px}
+.community-home .join{background:#101410;border-top:1px solid #293329}
+.community-home .community-join-copy{color:#aab5a6;font-size:13px;max-width:440px;margin:22px auto}
+.community-home .footer{background:#090c09;border-top:1px solid #293329}
+.community-home .footer-brand{color:#f2f6ee}
+@media(max-width:850px){.community-home .game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.community-home .game-card,.community-home .game-card:nth-child(4){grid-column:auto}.community-home .game-card:last-child{grid-column:1/-1}.community-home .community-feature{grid-template-columns:1fr}.community-home .community-feature-image{min-height:270px}.community-home .community-feature-content{padding:55px 25px}.community-home .section-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.community-home .community-hero{min-height:690px;background-position:58% center}.community-home .community-hero-content{width:auto;margin:0 24px;padding:65px 0 85px}.community-home .community-hero h1{font-size:clamp(58px,15vw,88px)}.community-home .community-hero-meta{gap:13px;flex-direction:column;margin-top:38px}.community-home .games-section{padding:65px 18px}.community-home .game-grid{grid-template-columns:1fr}.community-home .game-card,.community-home .game-card:last-child{grid-column:auto;min-height:290px}.community-home .community-intro{padding-top:68px;padding-bottom:68px}}
